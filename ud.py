@@ -25,7 +25,7 @@ def send_welcome(message):
                 + str("\n\n" + ud_response["list"][0]["definition"])
                 + str("\n\nExample: " + ud_response["list"][0]["example"])
             )
-            bot.reply_to(message, bot_response[0])
+            bot.reply_to(message, bot_response)
         else:
             bot.reply_to(
                 message, "No meaning available on Urban Dictionary. Try something else."
