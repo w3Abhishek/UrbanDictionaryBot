@@ -1,1 +1,1 @@
-worker: python ud.py
+worker: python3 ud.py
