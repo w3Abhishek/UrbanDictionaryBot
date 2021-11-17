@@ -9,6 +9,10 @@ bot = telebot.TeleBot('2107309460:AAEXty9oV7YY69bprPKUkdKE6yioyv2Ngvg') # replac
 
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'}
 
+@bot.message_handler(commands=['start'])
+def start_message(message):
+    bot.send_message(message.chat.id, 'Hi, I am UrbanDictionaryBot.\n\nI can tell you the definition of a word.\n\nUse /ud [word] to get the definition of a word.\n\nCreated by @w3Abhishek.')
+
 @bot.message_handler(commands=['ud']) # command to trigger the function
 def start(message):
     try:
