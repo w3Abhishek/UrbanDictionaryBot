@@ -5,7 +5,7 @@ import json
 # For latest version checkout: https://github.com/w3Abhishek/UrbanDictionaryBot
 # UrbanDictionayBot is using http://api.urbandictionary.com/v0/define?term=flump API (Unofficial)
 
-bot = telebot.TeleBot('2107309460:AAEXty9oV7YY69bprPKUkdKE6yioyv2Ngvg') # replace TOKEN with your bot token to authorize your bot
+bot = telebot.TeleBot('TOKEN') # replace TOKEN with your bot token to authorize your bot
 
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'}
 
